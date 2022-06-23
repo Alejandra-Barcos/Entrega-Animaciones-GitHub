@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
@@ -24,7 +25,7 @@
     </nav>
     
     <header class="header">
-        <div class="info">
+        <div class="info" data-aos="fade-right">
             <h1>Calefacción para tu hogar</h1>
             <h3>Elegí eficiencia y atención personalizada</h3>
             <button class="btn">Conocer más</button>
@@ -42,23 +43,23 @@
 
        <div class="cards">
         <div class="card">
-            <img class="card__img" src="./assets/img/Icono1.jpg" alt="">
+            <img class="card__img" src="./assets/img/Icono1.jpg" alt="" data-aos="flip-left">
             <h3 class="card__title">Excelente servicio</h3>
             <p class="card__text">Nos importa mucho la atención, llámanos o déjanos un correo y te responderemos 
                 al instante.</p>
             </div>
         <div class="card">
-            <img class="card__img" src="./assets/img/Icono2.jpg" alt="">
+            <img class="card__img" src="./assets/img/Icono2.jpg" alt="" data-aos="flip-left">
             <h3 class="card__title">Altos estándares</h3>
             <p class="card__text">Nos enfocamos en la calidez y bienestar del hogar, la eficiencia y la más alta calidad en sistemas de calefacción.</p>
         </div>
         <div class="card">
-            <img class="card__img" src="./assets/img/Icono3.jpg" alt="">
+            <img class="card__img" src="./assets/img/Icono3.jpg" alt="" data-aos="flip-left">
             <h3 class="card__title">Personal calificado</h3>
             <p class="card__text">Con años de experiencia en el rubro, nuestros trabajadores tienen la capacitación y la experiencia necesaria.</p>
         </div>
         <div class="card">
-            <img class="card__img" src="./assets/img/Icono4.jpg" alt="">
+            <img class="card__img" src="./assets/img/Icono4.jpg" alt="" data-aos="flip-left">
             <h3 class="card__title">Soluciones creativas</h3>
             <p class="card__text">Cada proyecto es diferente, y nuestra experiencia nos ha preparado para enfrentar cualquier problema de la manera mas optima.</p>
         </div>
@@ -86,6 +87,10 @@
         </div>
 
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     
 </body>
 </html>
