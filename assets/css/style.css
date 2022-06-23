@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*GRIDS*/
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 80px 550px 900px 150px;
+    grid-template-areas: "navbar navbar navbar navbar"
+                         "header header header header"
+                         "main   main   main   main"
+                         "footer footer footer footer";
+}
+
+/*INDEX navbar*/
+
+.navbar{
+    grid-area: navbar;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+}
+.navbar ul li{
+    padding: 20px;
+    
+}
+.navbar ul li a{
+    color: grey;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+.tel{
+    color: grey;
+    font-size: 20px;
+    color: #1e4177;
+    font-family: 'Rubik', sans-serif;
+}
+
+/*INDEX header*/
+
+.header{
+    grid-area: header;
+    background-image: url(../img/Inicio1.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    
+}
+.info{
+    color: white;
+    margin-left: 30px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    margin-bottom: 40px;
+    
+}
+.btn{
+    background-color: white;
+    color: #1e4177;
+    padding: 10px 10px;
+    border: 0;
+    border-radius: 10px;
+    margin: 10px;
+    font-family: 'Rubik', sans-serif;
+}
+
+/*INDEX main*/
+
+.main{
+    grid-area: main;
+    
+}
+.marcas{
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+.info2{
+    color: #1e4177;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    margin: 40px;
+    padding: 40px;
+}
+.info2__text{
+    margin: 15px;
+}
+.card{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+.card h3{
+    font-family: 'Rubik', sans-serif;
+    color: #1e4177;
+    margin: 10px;
+}
+.card p{
+    font-family: 'Rubik', sans-serif;
+    text-justify: inter-ideograph;
+}
+
+
+/*INDEX footer*/
+
+.footer{
+    grid-area: footer;
+    background-color: #1e4177;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+.dondeestamos{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    width: 200px;
+  
+}
+.contactanos{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+.derechos{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    width: 400px;
+    
+}
+.footer p{
+    font-size: 10px;
+    margin: 5px;
+}
+
